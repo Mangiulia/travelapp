@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgroud_img">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BE0E0E0E">
+
+    </View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="-26dp"
+        tools:layout_editor_absoluteY="16dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="241dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="92dp"
+                android:fontFamily="@font/bigshot_one"
+                android:text="@string/experience_the_wonders_of_the_world"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <EditText
+                android:id="@+id/etPass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:background="@drawable/input_bg"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:drawableLeft="@drawable/baseline_password_24"
+                android:drawablePadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+            <TextView
+                android:id="@+id/tvForgotPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/forgot_password"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/etPass"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/etPass"
+                app:layout_constraintTop_toBottomOf="@+id/etPass" />
+
+            <Button
+                android:id="@+id/btnLog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="LOGIN"
+                android:textColor="@color/white"
+                android:background="@drawable/input_bg"
+                android:backgroundTint="#43FFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/etPass"
+                app:layout_constraintStart_toStartOf="@+id/etPass"
+                app:layout_constraintTop_toBottomOf="@+id/tvForgotPass" />
+
+            <TextView
+                android:id="@+id/tvNewAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Create new Account?"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/btnLog"
+                app:layout_constraintStart_toStartOf="@+id/btnLog"
+                app:layout_constraintTop_toBottomOf="@+id/btnLog" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="OR"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="@+id/btnLog"
+                app:layout_constraintStart_toStartOf="@+id/btnLog"
+                app:layout_constraintTop_toBottomOf="@+id/tvNewAccount" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="44dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/btnLog"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/tvNewAccount">
+
+            </View>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/textView4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/btnLog"
+                app:layout_constraintTop_toBottomOf="@+id/tvNewAccount">
+
+            </View>
+
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Continue with Google"
+                android:textColor="@color/white"
+                android:background="@drawable/input_bg"
+                android:backgroundTint="#43FFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/view2"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                />
+
+            <Button
+                android:id="@+id/btnFacebook"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Continue with Facebook"
+                android:textColor="@color/white"
+                android:backgroundTint="#43FFFFFF"
+                android:background="@drawable/input_bg"
+                app:layout_constraintEnd_toEndOf="@+id/btnGoogle"
+                app:layout_constraintStart_toStartOf="@+id/btnGoogle"
+                app:layout_constraintTop_toBottomOf="@+id/btnGoogle" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="45dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnGoogle"
+                app:layout_constraintEnd_toEndOf="@+id/btnGoogle"
+                app:layout_constraintHorizontal_bias="0.024"
+                app:layout_constraintStart_toStartOf="@+id/btnGoogle"
+                app:layout_constraintTop_toTopOf="@+id/btnGoogle"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/google_logo" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="45dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnFacebook"
+                app:layout_constraintEnd_toEndOf="@+id/btnFacebook"
+                app:layout_constraintHorizontal_bias="0.024"
+                app:layout_constraintStart_toStartOf="@+id/btnFacebook"
+                app:layout_constraintTop_toTopOf="@+id/btnFacebook"
+                app:srcCompat="@drawable/facebook_logo" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

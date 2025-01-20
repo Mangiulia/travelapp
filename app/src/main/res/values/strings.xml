@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="log_in">LOG IN</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="experience_the_wonders_of_the_world">Experience the wonders of the world</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">LOGIN</string>
+    <string name="create_new_account">Create new Account</string>
+    <string name="default_web_client_id" />
+    <string name="facebook_app_id">2191240054549567</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="city_image">city_image</string>
+
+
+</resources>
