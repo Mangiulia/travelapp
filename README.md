@@ -14,6 +14,7 @@ For my bachelor’s project, I developed a mobile application designed to simpli
 
 # Application Preview – Functionality in Action
 
+[SISTEM INFORMATIC PENTRU GESTIONAREA SI ORGANIZAREA VACANȚELOR.pptx](https://github.com/user-attachments/files/19111633/SISTEM.INFORMATIC.PENTRU.GESTIONAREA.SI.ORGANIZAREA.VACAN.ELOR.pptx)
 
 
 
